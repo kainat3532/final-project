@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabrina — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Sabrina<span>.dev</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ───── HERO ───── -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-badge">👋 Available for learning &amp; projects</div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Sabrina</span><br />
+          I build things<br />for the web.
+        </h1>
+        <p class="hero-sub">
+          A 13-year-old full stack developer in training.
+          I love turning ideas into real websites using HTML, CSS, JavaScript and React.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">See my projects</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+        <div class="hero-stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Git</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">hello.js</span>
+          </div>
+          <pre class="code-block"><span class="kw">const</span> sana = {
+  <span class="key">name</span>: <span class="str">"Sabrina"</span>,
+  <span class="key">age</span>: <span class="num">13</span>,
+  <span class="key">role</span>: <span class="str">"Web Developer"</span>,
+  <span class="key">skills</span>: [
+    <span class="str">"HTML"</span>, <span class="str">"CSS"</span>,
+    <span class="str">"JavaScript"</span>,
+    <span class="str">"React"</span>, <span class="str">"Git"</span>
+  ],
+  <span class="key">greet</span>: <span class="kw">function</span>() {
+    <span class="kw">return</span> <span class="str">"Hello World! 🌍"</span>;
+  }
+};
+
+console.<span class="fn">log</span>(sana.<span class="fn">greet</span>());</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── ABOUT ───── -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-label">About me</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-title">A young developer with big dreams</h2>
+            <p>I started learning web development and I haven't stopped since. I love how you can create something from nothing — just a blank screen and some code, and suddenly there's a real website.</p>
+            <p>I'm currently learning full stack development: frontend with React, and soon databases and backend too!</p>
+            <div class="about-facts">
+              <div class="fact"><span class="fact-num">9</span><span class="fact-label">Phases completed</span></div>
+              <div class="fact"><span class="fact-num">6+</span><span class="fact-label">Projects built</span></div>
+              <div class="fact"><span class="fact-num">1</span><span class="fact-label">GitHub profile</span></div>
+            </div>
+          </div>
+          <div class="skills-panel">
+            <h3 class="skills-title">My skills</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-meta"><span>HTML &amp; CSS</span><span>90%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-width="90" style="--clr:#6C63FF"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>JavaScript</span><span>75%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-width="75" style="--clr:#FF6584"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>React</span><span>60%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-width="60" style="--clr:#43D39E"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Git &amp; GitHub</span><span>70%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-width="70" style="--clr:#F6C90E"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Responsive Design</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-width="80" style="--clr:#6C63FF"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta"><span>Fetch API &amp; JSON</span><span>65%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-width="65" style="--clr:#FF6584"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── PROJECTS ───── -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-label">What I've built</div>
+        <div class="projects-header">
+          <h2 class="section-title">My projects</h2>
+          <div class="filter-tabs" id="filterTabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="html">HTML/CSS</button>
+            <button class="filter-btn" data-filter="js">JavaScript</button>
+            <button class="filter-btn" data-filter="react">React</button>
+          </div>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── BLOG ───── -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-label">My thoughts</div>
+        <h2 class="section-title">Blog</h2>
+        <div class="blog-grid" id="blogGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── CONTACT ───── -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-label">Say hello</div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2 class="section-title">Let's connect!</h2>
+            <p>Have a question, a project idea, or just want to say hi? Fill in the form and I'll get back to you.</p>
+            <div class="contact-links">
+              <a href="https://github.com" target="_blank" class="contact-link">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                github.com/Sabrina 
+              </a>
+              <a href="mailto:Sabrina@example.com" class="contact-link">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                kainatriaz2002@example.com
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" />
+                <span class="form-error" id="nameErr">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="email" placeholder="your@email.com" autocomplete="email" />
+                <span class="form-error" id="emailErr">Enter a valid email address</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="What's it about?" />
+              <span class="form-error" id="subjectErr">Please enter a subject</span>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" name="message" rows="5" placeholder="Write your message here..."></textarea>
+              <span class="form-error" id="msgErr">Message must be at least 10 characters</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Send message
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll reply soon. Thanks for reaching out!
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">Sabrina<span>.dev</span></span>
+        <p>Built with HTML, CSS &amp; JavaScript — no frameworks!</p>
+        <p class="footer-copy">&copy; 2025 Sabrina. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.jsx"></script>
+  <script src="app.jsx"></script>
+</body>
+</html>
